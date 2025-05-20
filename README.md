@@ -29,6 +29,7 @@ depth_pointcloud_pub/
 ├── package.xml
 ├── setup.cfg
 └── setup.py
+```
 
 ## 📸 Sample Output
 
@@ -59,21 +60,32 @@ depth_pointcloud_pub/
 Install ROS 2 dependencies:
 ```bash
 sudo apt install ros-humble-cv-bridge ros-humble-sensor-msgs-py
+```
 Install Python packages:
-bashpip install opencv-python torch torchvision torchaudio
+```bash
+pip install opencv-python torch torchvision torchaudio
+```
 🧪 Run Instructions
 Step 1: Build the ROS2 Package
-bashcd ~/ros2_ws
+```bash
+cd ~/ros2_ws
 colcon build --packages-select depth_pointcloud_pub
 source install/setup.bash
+```
 Step 2: Launch the Depth Node
-bashros2 run depth_pointcloud_pub depth_node
+```bash
+ros2 run depth_pointcloud_pub depth_node
+```
 Step 3: Set Up TF Tree (optional)
 RViz2 needs a fixed frame to align your cloud. If camera_link is not part of the TF tree, publish a static transform:
-bashros2 run tf2_ros static_transform_publisher 0 0 0 0 0 0 map camera_link
+```bash
+ros2 run tf2_ros static_transform_publisher 0 0 0 0 0 0 map camera_link
+```
 Step 4: Visualize in RViz2
 Launch rviz2:
-bashrviz2
+```bash
+rviz2
+```
 
 In Global Options, set Fixed Frame to camera_link
 Add a new display of type PointCloud2
