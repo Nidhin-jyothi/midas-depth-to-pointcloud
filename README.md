@@ -19,10 +19,11 @@ This is particularly useful for:
 - Viewable in **RViz2** with proper TF and frame setup
 
 ## 🧱 Package Structure
+```text
 depth_pointcloud_pub/
 ├── depth_pointcloud_pub/
-│   ├── init.py
-│   └── depth_node.py    # Main ROS2 Node
+│   ├── __init__.py
+│   └── depth_node.py        # Main ROS2 Node
 ├── resource/
 ├── test/
 ├── package.xml
