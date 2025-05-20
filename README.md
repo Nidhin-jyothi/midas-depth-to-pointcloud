@@ -91,19 +91,15 @@ In Global Options, set Fixed Frame to camera_link
 Add a new display of type PointCloud2
 Set topic to /depth/pointcloud
 
-🛠️ Customization
+## 🛠️ Customization
 
 Modify camera intrinsics in depth_node.py if using a different resolution.
 Switch MiDaS model (DPT_Large, DPT_Hybrid) for better quality (but higher GPU load).
 
 🤖 Applications
 
-3D reconstruction
+## 3D reconstruction
 Perception in low-cost robotics
 Depth SLAM prototyping
 Autonomous navigation and mapping
 
-📄 License
-This project is open source under the MIT License. MiDaS is used under the Intel-ISL license.
-👨‍💻 Author
-Nidhin (GitHub: [your-username])
