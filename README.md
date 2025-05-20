@@ -96,9 +96,9 @@ Set topic to /depth/pointcloud
 Modify camera intrinsics in depth_node.py if using a different resolution.
 Switch MiDaS model (DPT_Large, DPT_Hybrid) for better quality (but higher GPU load).
 
-🤖 Applications
+## 🤖 Applications
 
-## 3D reconstruction
+3D reconstruction
 Perception in low-cost robotics
 Depth SLAM prototyping
 Autonomous navigation and mapping
